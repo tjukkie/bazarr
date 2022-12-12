@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  bazarr:
+    container_name: bazarr
+    image: cr.hotio.dev/hotio/bazarr
+    ports:
+      - "6767:6767"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Etc/UTC
+    volumes:
+      - /appdata/bazarr:/config
+      - /srv/dev-disk-by-uuid-08d98c61-c13c-41a5-ba6a-73145186723e/data/media/movies:/movies
+      - /srv/dev-disk-by-uuid-08d98c61-c13c-41a5-ba6a-73145186723e/data/media/tv:/tv  
