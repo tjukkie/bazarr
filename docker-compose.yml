@@ -14,4 +14,5 @@ services:
     volumes:
       - /appdata/bazarr:/config
       - /srv/dev-disk-by-uuid-08d98c61-c13c-41a5-ba6a-73145186723e/data/media/movies:/movies
+      - /srv/dev-disk-by-uuid-08d98c61-c13c-41a5-ba6a-73145186723e/data/media/movies-kids:/movies-kids      
       - /srv/dev-disk-by-uuid-08d98c61-c13c-41a5-ba6a-73145186723e/data/media/tv:/tv  
