@@ -13,7 +13,7 @@ services:
       - TZ=Europe/Amsterdam
     volumes:
       - /appdata/bazarr:/config
-      - /data:/data
+      - /data:/data # moet gelijk zijn aan hoe het bij sonarr en radarr staat genoemd
       #- /srv/dev-disk-by-uuid-08d98c61-c13c-41a5-ba6a-73145186723e/data/media/movies:/data/media/movies
       #- /srv/dev-disk-by-uuid-08d98c61-c13c-41a5-ba6a-73145186723e/data/media/movies-kids:/data/media/movies-kids
       #- /srv/dev-disk-by-uuid-08d98c61-c13c-41a5-ba6a-73145186723e/data/media/tv:/data/media/tv
