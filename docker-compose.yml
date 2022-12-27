@@ -3,7 +3,7 @@ version: "3.7"
 services:
   bazarr:
     container_name: bazarr
-    image: cr.hotio.dev/hotio/bazarr
+    image: cr.hotio.dev/hotio/bazarr:nightly
     ports:
       - "6767:6767"
     environment:
@@ -15,6 +15,3 @@ services:
       - /appdata/bazarr:/config
       - /data:/data # moet gelijk zijn aan hoe het bij sonarr en radarr staat genoemd
     restart: unless-stopped
-    dns:
-      - 1.1.1.1
-      - 1.0.0.1
