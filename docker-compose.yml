@@ -15,3 +15,6 @@ services:
       - /appdata/bazarr:/config
       - /data:/data # moet gelijk zijn aan hoe het bij sonarr en radarr staat genoemd
     restart: unless-stopped
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
