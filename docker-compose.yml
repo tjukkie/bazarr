@@ -3,7 +3,7 @@ version: "3.7"
 services:
   bazarr:
     container_name: bazarr
-    image: cr.hotio.dev/hotio/bazarr:nightly
+    image: ghcr.io/hotio/bazarr:nightly
     ports:
       - "6767:6767"
     environment:
